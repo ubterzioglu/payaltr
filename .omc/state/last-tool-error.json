@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"while kill -0 $(cat \\\"C:/Users/BARIS-~1/AppData/Local/Temp/claude/c--temp-private-payaltr/848e9d0e-9668-44fa-b9ad-2ca3501b4958/tasks/bkxbqkd69.output\\\" >/dev/null 2>&1; echo $$) 2>/dev/nul...",
+  "error": "Exit code 143\nCommand timed out after 2m 0s",
+  "timestamp": "2026-07-04T21:46:40.462Z",
+  "retry_count": 1
+}
