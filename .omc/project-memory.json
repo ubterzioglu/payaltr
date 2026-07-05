@@ -117,6 +117,12 @@
       "type": "file"
     },
     {
+      "path": ".env.local",
+      "accessCount": 4,
+      "lastAccessed": 1783255317985,
+      "type": "file"
+    },
+    {
       "path": "app\\layout.tsx",
       "accessCount": 3,
       "lastAccessed": 1783254595267,
@@ -153,6 +159,12 @@
       "type": "file"
     },
     {
+      "path": ".env.example",
+      "accessCount": 3,
+      "lastAccessed": 1783255329279,
+      "type": "file"
+    },
+    {
       "path": "components\\Footer.tsx",
       "accessCount": 2,
       "lastAccessed": 1783254503969,
@@ -168,12 +180,6 @@
       "path": "lib\\site.ts",
       "accessCount": 2,
       "lastAccessed": 1783254851794,
-      "type": "file"
-    },
-    {
-      "path": ".env.local",
-      "accessCount": 2,
-      "lastAccessed": 1783255227321,
       "type": "file"
     },
     {
@@ -273,12 +279,6 @@
       "type": "file"
     },
     {
-      "path": ".env.example",
-      "accessCount": 1,
-      "lastAccessed": 1783255236577,
-      "type": "file"
-    },
-    {
       "path": "lib\\supabase\\client.ts",
       "accessCount": 1,
       "lastAccessed": 1783255288712,
@@ -306,6 +306,12 @@
       "path": "middleware.ts",
       "accessCount": 1,
       "lastAccessed": 1783255305528,
+      "type": "file"
+    },
+    {
+      "path": "lib\\auth-actions.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783255339366,
       "type": "file"
     }
   ],
