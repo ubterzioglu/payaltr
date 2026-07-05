@@ -111,57 +111,117 @@
   },
   "hotPaths": [
     {
+      "path": "app\\globals.css",
+      "accessCount": 8,
+      "lastAccessed": 1783257263022,
+      "type": "file"
+    },
+    {
+      "path": "lib\\auth-actions.ts",
+      "accessCount": 6,
+      "lastAccessed": 1783255949683,
+      "type": "file"
+    },
+    {
+      "path": "app\\layout.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1783257757748,
+      "type": "file"
+    },
+    {
+      "path": "app\\sss-destek\\page.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1783257836352,
+      "type": "file"
+    },
+    {
       "path": "components\\home\\HomeSections.tsx",
       "accessCount": 5,
       "lastAccessed": 1783255024164,
       "type": "file"
     },
     {
-      "path": ".env.local",
-      "accessCount": 4,
-      "lastAccessed": 1783255317985,
-      "type": "file"
-    },
-    {
-      "path": "app\\layout.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1783254595267,
-      "type": "file"
-    },
-    {
-      "path": "app\\globals.css",
-      "accessCount": 3,
-      "lastAccessed": 1783254948715,
-      "type": "file"
-    },
-    {
-      "path": "app\\bize-ulasin\\page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1783255016852,
-      "type": "file"
-    },
-    {
       "path": "app\\giris\\page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1783255018227,
+      "accessCount": 5,
+      "lastAccessed": 1783255512368,
       "type": "file"
     },
     {
-      "path": "app\\kayit-ol\\page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1783255019665,
-      "type": "file"
-    },
-    {
-      "path": "app\\hakkimizda\\page.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1783255021258,
+      "path": ".env.local",
+      "accessCount": 5,
+      "lastAccessed": 1783255815011,
       "type": "file"
     },
     {
       "path": ".env.example",
+      "accessCount": 5,
+      "lastAccessed": 1783255831405,
+      "type": "file"
+    },
+    {
+      "path": "app\\hakkimizda\\page.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1783257801815,
+      "type": "file"
+    },
+    {
+      "path": "app\\bize-ulasin\\page.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1783257808316,
+      "type": "file"
+    },
+    {
+      "path": "app\\kayit-ol\\page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1783255359787,
+      "type": "file"
+    },
+    {
+      "path": "lib\\supabase\\middleware.ts",
+      "accessCount": 4,
+      "lastAccessed": 1783255913391,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\layout.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1783255998894,
+      "type": "file"
+    },
+    {
+      "path": "app\\fiyatlandirma\\page.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1783257843829,
+      "type": "file"
+    },
+    {
+      "path": "app\\blog\\[slug]\\page.tsx",
       "accessCount": 3,
-      "lastAccessed": 1783255329279,
+      "lastAccessed": 1783257777162,
+      "type": "file"
+    },
+    {
+      "path": "app\\yatirima-basla\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783257810519,
+      "type": "file"
+    },
+    {
+      "path": "app\\kvkk-aydinlatma-metni\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783257812682,
+      "type": "file"
+    },
+    {
+      "path": "app\\iade-ve-iade-politikasi\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783257814519,
+      "type": "file"
+    },
+    {
+      "path": "app\\blog\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783257816209,
       "type": "file"
     },
     {
@@ -180,6 +240,18 @@
       "path": "lib\\site.ts",
       "accessCount": 2,
       "lastAccessed": 1783254851794,
+      "type": "file"
+    },
+    {
+      "path": "lib\\admin-auth.ts",
+      "accessCount": 2,
+      "lastAccessed": 1783255902947,
+      "type": "file"
+    },
+    {
+      "path": "app\\hesabim\\page.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1783257183608,
       "type": "file"
     },
     {
@@ -225,57 +297,15 @@
       "type": "file"
     },
     {
-      "path": "app\\fiyatlandirma\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783254679314,
-      "type": "file"
-    },
-    {
-      "path": "app\\sss-destek\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783254699267,
-      "type": "file"
-    },
-    {
-      "path": "app\\yatirima-basla\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783254714906,
-      "type": "file"
-    },
-    {
       "path": "lib\\posts.ts",
       "accessCount": 1,
       "lastAccessed": 1783254865733,
       "type": "file"
     },
     {
-      "path": "app\\blog\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783254876883,
-      "type": "file"
-    },
-    {
-      "path": "app\\blog\\[slug]\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783254880763,
-      "type": "file"
-    },
-    {
       "path": "lib\\legal.ts",
       "accessCount": 1,
       "lastAccessed": 1783254901097,
-      "type": "file"
-    },
-    {
-      "path": "app\\kvkk-aydinlatma-metni\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783254903773,
-      "type": "file"
-    },
-    {
-      "path": "app\\iade-ve-iade-politikasi\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783254905578,
       "type": "file"
     },
     {
@@ -297,21 +327,87 @@
       "type": "file"
     },
     {
-      "path": "lib\\supabase\\middleware.ts",
-      "accessCount": 1,
-      "lastAccessed": 1783255304117,
-      "type": "file"
-    },
-    {
       "path": "middleware.ts",
       "accessCount": 1,
       "lastAccessed": 1783255305528,
       "type": "file"
     },
     {
-      "path": "lib\\auth-actions.ts",
+      "path": "app\\admin\\page.tsx",
       "accessCount": 1,
-      "lastAccessed": 1783255339366,
+      "lastAccessed": 1783255399758,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\kullanicilar\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783255409754,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\icerik\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783255413891,
+      "type": "file"
+    },
+    {
+      "path": "app\\giris\\GirisForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783255501364,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\giris\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783255923925,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\giris\\AdminGirisForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783255926501,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(dashboard)\\layout.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783256002632,
+      "type": "file"
+    },
+    {
+      "path": "supabase\\migrations\\0001_revision_requests.sql",
+      "accessCount": 1,
+      "lastAccessed": 1783256051990,
+      "type": "file"
+    },
+    {
+      "path": "lib\\revisions.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783257131088,
+      "type": "file"
+    },
+    {
+      "path": "lib\\revision-actions.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783257143358,
+      "type": "file"
+    },
+    {
+      "path": "app\\hesabim\\RevisionRequestForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783257158394,
+      "type": "file"
+    },
+    {
+      "path": "app\\hesabim\\UserCommentForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783257160678,
+      "type": "file"
+    },
+    {
+      "path": "app\\admin\\(dashboard)\\revizyon-istekleri\\AdminCommentForm.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783257191645,
       "type": "file"
     }
   ],
