@@ -3,22 +3,22 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://payaltr.com"),
-  title: "payaltr — Payments, reinvented.",
+  title: "payaltr — Yenileniyoruz",
   description:
-    "payaltr is building a faster, safer way to move money. Secure by design, effortless by default. Launching soon.",
-  keywords: ["payaltr", "payments", "fintech", "money transfer", "coming soon"],
+    "Sizin için daha iyi bir deneyim üzerinde çalışıyoruz. Çok yakında buradayız.",
+  keywords: ["payaltr", "yenileniyoruz", "çok yakında", "coming soon"],
   openGraph: {
-    title: "payaltr — Payments, reinvented.",
+    title: "payaltr — Yenileniyoruz",
     description:
-      "A faster, safer way to move money. Secure by design, effortless by default. Launching soon.",
+      "Sizin için daha iyi bir deneyim üzerinde çalışıyoruz. Çok yakında buradayız.",
     url: "https://payaltr.com",
     siteName: "payaltr",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "payaltr — Payments, reinvented.",
-    description: "A faster, safer way to move money. Launching soon.",
+    title: "payaltr — Yenileniyoruz",
+    description: "Çok yakında buradayız.",
   },
   robots: { index: true, follow: true },
 };
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="tr">
       <body>{children}</body>
     </html>
   );

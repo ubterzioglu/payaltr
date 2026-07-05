@@ -1,9 +1,9 @@
 # payaltr
 
-Premium "coming soon" page for **payaltr** — payments, reinvented.
+Premium "coming soon" / "yenileniyoruz" page for **payaltr**.
 
 Built with Next.js 15 (App Router) + TypeScript. Static-rendered, dark
-premium fintech design, no external dependencies at runtime.
+premium design, no external dependencies at runtime.
 
 ## Local development
 

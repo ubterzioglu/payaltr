@@ -3,12 +3,12 @@ export default function Hero() {
     <section className="hero">
       <span className="pill">
         <span className="pill__dot" />
-        Coming soon
+        Çok yakında
       </span>
-      <h1 className="hero__title">Payments, reinvented.</h1>
+      <h1 className="hero__title">Yenileniyoruz.</h1>
       <p className="hero__sub">
-        payaltr is building a faster, safer way to move money. Secure by design,
-        effortless by default. Launching soon.
+        Sizin için daha iyi bir deneyim üzerinde çalışıyoruz. Çok yakında
+        buradayız.
       </p>
     </section>
   );

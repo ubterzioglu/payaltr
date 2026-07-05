@@ -7,7 +7,7 @@ export default function Footer() {
           X
         </a>
       </nav>
-      <span className="footer__copy">© 2026 payaltr. All rights reserved.</span>
+      <span className="footer__copy">© 2026 payaltr. Tüm hakları saklıdır.</span>
     </footer>
   );
 }
