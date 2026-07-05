@@ -4,5 +4,6 @@ out/
 *.log
 .DS_Store
 .env*
+!.env.example
 *.wpress
 _wpress_extract/

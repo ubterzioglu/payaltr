@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"SP=\\\"C:/Users/BARIS-~1/AppData/Local/Temp/claude/c--temp-private-payaltr/848e9d0e-9668-44fa-b9ad-2ca3501b4958/scratchpad\\\"\\npython \\\"$SP/parse_options.py\\\" \\\"$SP/database.sql\\\" 2>&1\",\"desc...",
+  "error": "Exit code 1\nblogname                 = PayAL\r\nTraceback (most recent call last):\r\n  File \"C:\\Users\\BARIS-~1\\AppData\\Local\\Temp\\claude\\c--temp-private-payaltr\\848e9d0e-9668-44fa-b9ad-2ca3501b4958\\scratchpad\\parse_options.py\", line 28, in <module>\r\n    print(f\"{k:24} = {found.get(k,'(bulunamadi)')}\")\r\n  File \"C:\\Users\\baris-terzioglu\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\encodings\\cp1252.py\", line 19, in encode\r\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\r\n         ...",
+  "timestamp": "2026-07-05T12:10:37.650Z",
+  "retry_count": 1
+}

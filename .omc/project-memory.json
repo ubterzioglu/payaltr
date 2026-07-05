@@ -111,21 +111,69 @@
   },
   "hotPaths": [
     {
-      "path": "app\\layout.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1783245540108,
+      "path": "components\\home\\HomeSections.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1783255024164,
       "type": "file"
     },
     {
-      "path": "components\\Hero.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783245518413,
+      "path": "app\\layout.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783254595267,
+      "type": "file"
+    },
+    {
+      "path": "app\\globals.css",
+      "accessCount": 3,
+      "lastAccessed": 1783254948715,
+      "type": "file"
+    },
+    {
+      "path": "app\\bize-ulasin\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783255016852,
+      "type": "file"
+    },
+    {
+      "path": "app\\giris\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783255018227,
+      "type": "file"
+    },
+    {
+      "path": "app\\kayit-ol\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783255019665,
+      "type": "file"
+    },
+    {
+      "path": "app\\hakkimizda\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1783255021258,
       "type": "file"
     },
     {
       "path": "components\\Footer.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783245525352,
+      "accessCount": 2,
+      "lastAccessed": 1783254503969,
+      "type": "file"
+    },
+    {
+      "path": "components\\Hero.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1783254515727,
+      "type": "file"
+    },
+    {
+      "path": "lib\\site.ts",
+      "accessCount": 2,
+      "lastAccessed": 1783254851794,
+      "type": "file"
+    },
+    {
+      "path": ".env.local",
+      "accessCount": 2,
+      "lastAccessed": 1783255227321,
       "type": "file"
     },
     {
@@ -138,6 +186,126 @@
       "path": "README.md",
       "accessCount": 1,
       "lastAccessed": 1783245563811,
+      "type": "file"
+    },
+    {
+      "path": "components\\Header.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254496575,
+      "type": "file"
+    },
+    {
+      "path": "lib\\home.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783254553027,
+      "type": "file"
+    },
+    {
+      "path": "app\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254590839,
+      "type": "file"
+    },
+    {
+      "path": "next.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783254609309,
+      "type": "file"
+    },
+    {
+      "path": "components\\PageHero.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254657800,
+      "type": "file"
+    },
+    {
+      "path": "app\\fiyatlandirma\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254679314,
+      "type": "file"
+    },
+    {
+      "path": "app\\sss-destek\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254699267,
+      "type": "file"
+    },
+    {
+      "path": "app\\yatirima-basla\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254714906,
+      "type": "file"
+    },
+    {
+      "path": "lib\\posts.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783254865733,
+      "type": "file"
+    },
+    {
+      "path": "app\\blog\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254876883,
+      "type": "file"
+    },
+    {
+      "path": "app\\blog\\[slug]\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254880763,
+      "type": "file"
+    },
+    {
+      "path": "lib\\legal.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783254901097,
+      "type": "file"
+    },
+    {
+      "path": "app\\kvkk-aydinlatma-metni\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254903773,
+      "type": "file"
+    },
+    {
+      "path": "app\\iade-ve-iade-politikasi\\page.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1783254905578,
+      "type": "file"
+    },
+    {
+      "path": ".env.example",
+      "accessCount": 1,
+      "lastAccessed": 1783255236577,
+      "type": "file"
+    },
+    {
+      "path": "lib\\supabase\\client.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783255288712,
+      "type": "file"
+    },
+    {
+      "path": "lib\\supabase\\server.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783255292424,
+      "type": "file"
+    },
+    {
+      "path": "lib\\supabase\\admin.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783255294846,
+      "type": "file"
+    },
+    {
+      "path": "lib\\supabase\\middleware.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783255304117,
+      "type": "file"
+    },
+    {
+      "path": "middleware.ts",
+      "accessCount": 1,
+      "lastAccessed": 1783255305528,
       "type": "file"
     }
   ],
