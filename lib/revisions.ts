@@ -2,7 +2,8 @@ export type RevisionStatus = "open" | "in_progress" | "done" | "rejected";
 
 export type RevisionRequest = {
   id: string;
-  user_id: string;
+  user_id: string | null;
+  created_by_admin: boolean;
   title: string;
   description: string;
   status: RevisionStatus;

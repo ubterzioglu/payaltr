@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { STATUS_LABELS, type RevisionRequest, type RevisionComment } from "@/lib/revisions";
 import AdminCommentForm from "./AdminCommentForm";
+import AdminRequestForm from "./AdminRequestForm";
 import StatusSelect from "./StatusSelect";
 
 export const metadata: Metadata = { title: "Admin — Revizyon İstekleri" };
@@ -38,20 +39,29 @@ export default async function Page() {
   return (
     <div>
       <h1 className="admin__title">Revizyon İstekleri</h1>
+
+      <div className="card" style={{ maxWidth: 640, marginTop: "1.5rem" }}>
+        <h3 className="card__title">Yeni İstek Ekle</h3>
+        <AdminRequestForm />
+      </div>
+
       {reqError ? (
-        <p className="auth__error" style={{ marginTop: "1rem" }}>
+        <p className="auth__error" style={{ marginTop: "1.5rem" }}>
           İstekler alınamadı: {reqError.message}
         </p>
       ) : null}
 
-      <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", marginTop: "1.5rem" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem", marginTop: "2rem" }}>
         {(requests ?? []).map((r: RevisionRequest) => (
           <article key={r.id} className="card revision-card">
             <div className="revision-card__head">
               <div>
                 <h3 className="card__title">{r.title}</h3>
                 <p className="revision-card__meta">
-                  {emailByUserId.get(r.user_id) ?? "Bilinmeyen kullanıcı"} ·{" "}
+                  {r.created_by_admin
+                    ? "PayAL Yönetim (dahili not)"
+                    : (r.user_id ? emailByUserId.get(r.user_id) : null) ?? "Bilinmeyen kullanıcı"}
+                  {" · "}
                   {new Date(r.created_at).toLocaleString("tr-TR")}
                 </p>
               </div>

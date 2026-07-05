@@ -39,6 +39,34 @@ export async function createRevisionRequest(
   return { error: null, success: true };
 }
 
+/** Admin tarafı — service-role client kullanır, kendi adına istek/not oluşturur. */
+export async function createAdminRevisionRequest(
+  _prev: RevisionFormState,
+  formData: FormData,
+): Promise<RevisionFormState> {
+  const title = String(formData.get("title") ?? "").trim();
+  const description = String(formData.get("description") ?? "").trim();
+
+  if (!title || !description) {
+    return { error: "Başlık ve açıklama zorunludur." };
+  }
+
+  const admin = createAdminClient();
+  const { error } = await admin.from("revision_requests").insert({
+    user_id: null,
+    created_by_admin: true,
+    title,
+    description,
+  });
+
+  if (error) {
+    return { error: "İstek oluşturulamadı: " + error.message };
+  }
+
+  revalidatePath("/admin/revizyon-istekleri");
+  return { error: null, success: true };
+}
+
 export async function addUserComment(
   _prev: RevisionFormState,
   formData: FormData,
