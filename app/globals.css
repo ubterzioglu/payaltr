@@ -948,3 +948,300 @@ body > main {
     flex-direction: row;
   }
 }
+
+/* ---------- Admin login (split panel) ---------- */
+.admin-login {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--navy-900);
+}
+
+@media (min-width: 900px) {
+  .admin-login {
+    grid-template-columns: 1.15fr 1fr;
+  }
+}
+
+.admin-login__brand {
+  position: relative;
+  padding: clamp(2rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #eaf0ff;
+  background:
+    linear-gradient(
+      160deg,
+      rgba(245, 166, 35, 0.06),
+      transparent 55%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 64px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 64px
+    ),
+    var(--navy-900);
+  min-height: 320px;
+}
+
+.admin-login__brandmark {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.admin-login__logo-box {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.admin-login__eyebrow {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.admin-login__headline {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0.75rem;
+  max-width: 20ch;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.admin-login__headline span {
+  color: var(--gold-2);
+}
+
+.admin-login__sub {
+  margin-top: 1rem;
+  color: #b9c4e6;
+  max-width: 34ch;
+}
+
+.admin-login__cities {
+  margin-top: 2rem;
+  color: #7c88ad;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+}
+
+.admin-login__panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy-800);
+  padding: clamp(2rem, 5vw, 3rem);
+}
+
+.admin-login__panel-inner {
+  width: 100%;
+  max-width: 360px;
+}
+
+.admin-login__title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 0.4rem;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.admin-login__hint {
+  color: #97a4c9;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.admin-login__form {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.admin-login__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #b9c4e6;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.admin-login__label input {
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  font: inherit;
+  letter-spacing: 0.2em;
+}
+
+.admin-login__label input:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.admin-login__submit {
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold-2);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.admin-login__submit:hover:not(:disabled) {
+  background: var(--gold);
+  color: #21160a;
+}
+
+.admin-login__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-login__footnote {
+  margin-top: 1.5rem;
+  color: #6c7aa0;
+  font-size: 0.82rem;
+}
+
+/* ---------- Revision requests ---------- */
+.revision-card {
+  text-align: left;
+}
+
+.revision-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.revision-card__meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+
+.revision-status {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.revision-status--open {
+  background: #fdf1de;
+  color: #a15c00;
+}
+
+.revision-status--in_progress {
+  background: #e6eeff;
+  color: #2f5bff;
+}
+
+.revision-status--done {
+  background: #eaf7ee;
+  color: #1e6b3a;
+}
+
+.revision-status--rejected {
+  background: #fdecec;
+  color: #b3261e;
+}
+
+.revision-status-select {
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.revision-thread {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.revision-comment {
+  background: var(--bg-soft);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+}
+
+.revision-comment strong {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.revision-comment--admin {
+  background: #fff8e8;
+}
+
+.revision-comment--admin strong {
+  color: #a15c00;
+}
+
+.comment-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.comment-form textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font: inherit;
+  resize: vertical;
+}
+
+.comment-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.comment-form .btn {
+  align-self: flex-start;
+}

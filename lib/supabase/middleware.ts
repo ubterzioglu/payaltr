@@ -1,10 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
-
-const ADMIN_EMAILS = (process.env.ADMIN_EMAILS ?? "")
-  .split(",")
-  .map((e) => e.trim().toLowerCase())
-  .filter(Boolean);
+import { ADMIN_SESSION_COOKIE, isValidToken } from "@/lib/admin-auth";
 
 export async function updateSession(request: NextRequest) {
   let response = NextResponse.next({ request });
@@ -36,12 +32,12 @@ export async function updateSession(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  if (pathname.startsWith("/admin")) {
-    const email = user?.email?.toLowerCase();
-    const isAdmin = !!email && ADMIN_EMAILS.includes(email);
-    if (!user || !isAdmin) {
+  if (pathname.startsWith("/admin") && pathname !== "/admin/giris") {
+    const sessionCookie = request.cookies.get(ADMIN_SESSION_COOKIE)?.value;
+    const isAdmin = await isValidToken(sessionCookie);
+    if (!isAdmin) {
       const url = request.nextUrl.clone();
-      url.pathname = "/giris";
+      url.pathname = "/admin/giris";
       url.searchParams.set("next", pathname);
       return NextResponse.redirect(url);
     }

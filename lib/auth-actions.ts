@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { clearAdminSession, setAdminSession, verifyAdminPassword } from "@/lib/admin-auth";
 
 export type AuthState = { error: string | null };
 
@@ -60,4 +61,27 @@ export async function signOut(): Promise<void> {
   const supabase = await createClient();
   await supabase.auth.signOut();
   redirect("/");
+}
+
+export async function adminSignIn(
+  _prev: AuthState,
+  formData: FormData,
+): Promise<AuthState> {
+  const password = String(formData.get("password") ?? "");
+  const next = String(formData.get("next") ?? "/admin");
+
+  if (!password) {
+    return { error: "Şifre zorunludur." };
+  }
+  if (!verifyAdminPassword(password)) {
+    return { error: "Şifre hatalı." };
+  }
+
+  await setAdminSession();
+  redirect(next);
+}
+
+export async function adminSignOut(): Promise<void> {
+  await clearAdminSession();
+  redirect("/admin/giris");
 }
