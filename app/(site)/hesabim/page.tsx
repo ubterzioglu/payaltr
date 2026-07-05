@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { createClient } from "@/lib/supabase/server";
 import { signOut } from "@/lib/auth-actions";
 import { STATUS_LABELS, type RevisionRequest, type RevisionComment } from "@/lib/revisions";
+import type { Investment, Property } from "@/lib/investments";
 import RevisionRequestForm from "./RevisionRequestForm";
 import UserCommentForm from "./UserCommentForm";
 
@@ -44,6 +46,18 @@ export default async function Page() {
     }
   }
 
+  const { data: wallet } = user
+    ? await supabase.from("wallets").select("balance").eq("user_id", user.id).maybeSingle()
+    : { data: null };
+
+  const { data: investments } = user
+    ? await supabase
+        .from("investments")
+        .select("*, properties(title, image_url)")
+        .eq("user_id", user.id)
+        .order("created_at", { ascending: false })
+    : { data: [] as (Investment & { properties: Pick<Property, "title" | "image_url"> })[] };
+
   return (
     <>
       <PageHero title="Hesabım" subtitle={user?.email ?? ""} />
@@ -55,14 +69,50 @@ export default async function Page() {
             </h3>
             <p className="card__text">{user?.email}</p>
             <p className="card__text" style={{ marginTop: "1rem" }}>
-              Cüzdan, portföy ve yatırım akışları Faz 3&apos;te eklenecektir.
+              Cüzdan bakiyeniz:{" "}
+              <strong>
+                {(wallet?.balance ?? 0).toLocaleString("tr-TR", {
+                  style: "currency",
+                  currency: "USD",
+                })}
+              </strong>
             </p>
+            <div style={{ display: "flex", gap: "0.75rem", marginTop: "1.5rem", flexWrap: "wrap" }}>
+              <Link href="/hesabim/cuzdanim" className="btn btn--gold">
+                Cüzdanım
+              </Link>
+              <Link href="/yatirima-basla" className="btn btn--dark">
+                Yatırıma Başla
+              </Link>
+            </div>
             <form action={signOut} style={{ marginTop: "1.5rem" }}>
               <button type="submit" className="btn btn--dark">
                 Çıkış Yap
               </button>
             </form>
           </div>
+
+          {(investments ?? []).length > 0 ? (
+            <div style={{ marginTop: "2.5rem" }}>
+              <h3 className="card__title">Portföyüm</h3>
+              <div className="grid grid--3" style={{ marginTop: "1rem" }}>
+                {(investments ?? []).map((inv) => (
+                  <article key={inv.id} className="card">
+                    <h4 className="card__title" style={{ fontSize: "1rem" }}>
+                      {inv.properties?.title ?? "Mülk"}
+                    </h4>
+                    <p className="card__text">{inv.shares} pay</p>
+                    <p className="card__text">
+                      {inv.amount.toLocaleString("tr-TR", {
+                        style: "currency",
+                        currency: "USD",
+                      })}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          ) : null}
         </div>
       </section>
 

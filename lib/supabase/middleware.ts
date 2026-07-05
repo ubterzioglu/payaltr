@@ -43,7 +43,7 @@ export async function updateSession(request: NextRequest) {
     }
   }
 
-  if (pathname === "/hesabim" && !user) {
+  if (pathname.startsWith("/hesabim") && !user) {
     const url = request.nextUrl.clone();
     url.pathname = "/giris";
     url.searchParams.set("next", pathname);

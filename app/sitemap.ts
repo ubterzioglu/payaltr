@@ -16,7 +16,7 @@ const staticPages: { path: string; priority: number; changeFrequency: MetadataRo
   { path: "/kayit-ol", priority: 0.5, changeFrequency: "yearly" },
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
 
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((p) => ({
@@ -26,7 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: p.priority,
   }));
 
-  const postEntries: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
+  const posts = await getAllPosts();
+  const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${site.url}/blog/${post.slug}`,
     lastModified: now,
     changeFrequency: "monthly",

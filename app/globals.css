@@ -179,9 +179,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(10, 18, 48, 0.92);
   backdrop-filter: saturate(160%) blur(10px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .site-header__inner {
@@ -203,7 +203,7 @@ img {
 }
 
 .site-nav__link {
-  color: var(--fg);
+  color: #c6d0ee;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.4rem 0;
@@ -212,7 +212,7 @@ img {
 }
 
 .site-nav__link:hover {
-  color: var(--accent);
+  color: #fff;
   border-color: var(--gold);
 }
 
@@ -226,6 +226,7 @@ img {
 .site-header__login {
   font-weight: 700;
   font-size: 0.95rem;
+  color: #fff;
 }
 
 .site-header__burger {
@@ -241,7 +242,7 @@ img {
 .site-header__burger span {
   width: 22px;
   height: 2px;
-  background: var(--fg);
+  background: #fff;
   border-radius: 2px;
 }
 
@@ -252,8 +253,8 @@ img {
     left: 0;
     right: 0;
     flex-direction: column;
-    background: #fff;
-    border-bottom: 1px solid var(--line);
+    background: var(--navy-900);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding: 1rem 1.25rem;
     gap: 0.75rem;
     display: none;
@@ -1244,4 +1245,84 @@ img {
 
 .comment-form .btn {
   align-self: flex-start;
+}
+
+/* ---------- Invest flow ---------- */
+.invest-property__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0.6rem 0 0.4rem;
+}
+
+.funding-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.funding-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-2));
+}
+
+.invest-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.invest-form__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.invest-form__row input {
+  width: 80px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.invest-form__price {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ---------- Admin changelog ---------- */
+.changelog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.changelog__entry {
+  border-left: 2px solid var(--gold);
+  padding-left: 1rem;
+}
+
+.changelog__date {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.changelog__items {
+  margin: 0.5rem 0 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+  color: #33405e;
 }
