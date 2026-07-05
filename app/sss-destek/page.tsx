@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import JsonLd from "@/components/JsonLd";
 
-export const metadata: Metadata = { title: "SSS & Destek" };
+export const metadata: Metadata = {
+  title: "SSS & Destek",
+  description:
+    "PayAL ile paylaşımlı gayrimenkul yatırımı, minimum yatırım tutarı, kira geliri, çıkış seçenekleri ve vergi hakkında sık sorulan sorular.",
+  alternates: { canonical: "/sss-destek" },
+};
 
 const faqs = [
   {
@@ -30,9 +36,20 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function Page() {
   return (
     <>
+      <JsonLd data={faqJsonLd} />
       <PageHero
         title="SSS & Destek"
         subtitle="Herhangi bir sorunuz var mı? Size yardımcı olmak için buradayız."

@@ -1,0 +1,35 @@
+# PayAL
+
+> PayAL, Dubai ve Körfez ülkelerindeki birinci sınıf gayrimenkullere 150 USD'den
+> başlayan paylarla paylaşımlı (fractional) yatırım yapılmasını sağlayan bir
+> yatırım platformudur. Slogan: "Payın Kadar Kazan".
+
+PayAL, yatırımcıların gayrimenkulün tamamını satın almadan bir mülkün payına
+sahip olmasını sağlar. Yatırımcılar payları oranında aylık kira geliri alır ve
+mülk satışında değer artışından faydalanır. Süreç uzmanlar ve profesyonel
+platformlar (GetStake ortaklığıyla) tarafından yönetilir; yatırımcılar resmi
+Tapu ve Pay Senedi belgeleriyle yasal hak sahibi olur. BAE ve Körfez
+ülkelerindeki yatırımlar için Gelir Vergisi alınmaz.
+
+## Temel Sayfalar
+
+- [Ana Sayfa](https://payaltr.com/): Değer önermesi, yatırım avantajları,
+  yasal güvence ve istatistikler.
+- [Hakkımızda](https://payaltr.com/hakkimizda): PayAL'in misyonu ve güven
+  göstergeleri.
+- [Fiyatlandırma](https://payaltr.com/fiyatlandirma): Basic / Standard /
+  Premium yatırım seviyeleri.
+- [Yatırıma Başla](https://payaltr.com/yatirima-basla): Adım adım yatırım
+  süreci rehberi.
+- [SSS & Destek](https://payaltr.com/sss-destek): Sık sorulan sorular.
+- [Blog](https://payaltr.com/blog): Gayrimenkul yatırımı, pasif gelir ve
+  piyasa analizleri üzerine içerikler.
+
+## Yasal
+
+- [KVKK Aydınlatma Metni](https://payaltr.com/kvkk-aydinlatma-metni)
+- [İade ve İade Politikası](https://payaltr.com/iade-ve-iade-politikasi)
+
+## İletişim
+
+E-posta: info@payaltr.com

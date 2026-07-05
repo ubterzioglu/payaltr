@@ -3,7 +3,12 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { getAllPosts, summarize } from "@/lib/posts";
 
-export const metadata: Metadata = { title: "Blog" };
+export const metadata: Metadata = {
+  title: "Blog",
+  description:
+    "Gayrimenkul yatırımı, paylaşımlı mülkiyet, pasif gelir ve piyasa analizleri üzerine PayAL blog yazıları.",
+  alternates: { canonical: "/blog" },
+};
 
 export default function Page() {
   const posts = getAllPosts();

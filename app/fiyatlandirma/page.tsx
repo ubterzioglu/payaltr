@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Fiyatlandırma" };
+export const metadata: Metadata = {
+  title: "Fiyatlandırma",
+  description:
+    "150 USD'den başlayan Basic, Standard ve Premium yatırım seviyeleriyle bütçenize uygun payla PayAL'de gayrimenkul yatırımına başlayın.",
+  alternates: { canonical: "/fiyatlandirma" },
+};
 
 const plans = [
   {

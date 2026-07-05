@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import { site } from "@/lib/site";
 
-export const metadata: Metadata = { title: "Bize Ulaşın" };
+export const metadata: Metadata = {
+  title: "Bize Ulaşın",
+  description:
+    "PayAL ekibiyle iletişime geçin. Sorularınız için telefon, e-posta veya hızlı iletişim formu üzerinden bize ulaşın.",
+  alternates: { canonical: "/bize-ulasin" },
+};
 
 export default function Page() {
   return (

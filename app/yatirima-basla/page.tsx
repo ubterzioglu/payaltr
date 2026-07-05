@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Yatırıma Başla" };
+export const metadata: Metadata = {
+  title: "Yatırıma Başla",
+  description:
+    "Üye olun, mülk seçin, pay alın, kazanın. PayAL ile gayrimenkul yatırımına başlamanın adım adım rehberi.",
+  alternates: { canonical: "/yatirima-basla" },
+};
 
 const steps = [
   { n: "1", title: "Üye Olun", text: "Birkaç dakikada hesabınızı oluşturun ve kimliğinizi doğrulayın." },

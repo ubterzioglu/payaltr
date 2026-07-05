@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
-export const metadata: Metadata = { title: "Hakkımızda" };
+export const metadata: Metadata = {
+  title: "Hakkımızda",
+  description:
+    "PayAL, Dubai ve Körfez'deki birinci sınıf gayrimenkullere paylaşımlı yatırım yapmanızı sağlayan yatırım köprüsüdür. Şeffaf, güvenilir ve denetlenen bir yapı.",
+  alternates: { canonical: "/hakkimizda" },
+};
 
 const trust = [
   { value: "10+", label: "Yıllık Deneyim" },
