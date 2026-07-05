@@ -1,10 +1,15 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useActionState } from "react";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import { signUp, type AuthState } from "@/lib/auth-actions";
 
-export const metadata: Metadata = { title: "Kayıt Ol" };
+const initialState: AuthState = { error: null };
 
 export default function Page() {
+  const [state, formAction, pending] = useActionState(signUp, initialState);
+
   return (
     <>
       <PageHero
@@ -13,27 +18,31 @@ export default function Page() {
       />
       <section className="section">
         <div className="container auth">
-          <form className="auth__form">
+          <form action={formAction} className="auth__form">
+            {state.error ? <p className="auth__error">{state.error}</p> : null}
             <label>
               Ad Soyad
-              <input type="text" name="name" placeholder="Adınız Soyadınız" />
+              <input type="text" name="name" required placeholder="Adınız Soyadınız" />
             </label>
             <label>
               E-posta
-              <input type="email" name="email" placeholder="ornek@eposta.com" />
+              <input type="email" name="email" required placeholder="ornek@eposta.com" />
             </label>
             <label>
               Şifre
-              <input type="password" name="password" placeholder="••••••••" />
+              <input
+                type="password"
+                name="password"
+                required
+                minLength={8}
+                placeholder="En az 8 karakter"
+              />
             </label>
-            <button type="button" className="btn btn--gold">
-              Üye Ol
+            <button type="submit" className="btn btn--gold" disabled={pending}>
+              {pending ? "Kayıt oluşturuluyor…" : "Üye Ol"}
             </button>
             <p className="auth__alt">
               Zaten hesabınız var mı? <Link href="/giris">Giriş yapın</Link>
-            </p>
-            <p className="contact__note">
-              Kimlik doğrulama Faz 2&apos;de Supabase ile aktifleştirilecektir.
             </p>
           </form>
         </div>
