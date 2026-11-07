@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd /c/temp_private/payaltr\\ngit config --get core.quotepath\\ngit config --get --local core.quotepath 2>&1\\necho \\\"--- unset (repo-local ise sadece bu repoyu etkiler) ---\\\"\\ngit config --un...",
-  "error": "Exit code 1\nfalse\nfalse\n--- unset (repo-local ise sadece bu repoyu etkiler) ---",
-  "timestamp": "2026-07-05T14:53:42.979Z",
-  "retry_count": 1
-}
